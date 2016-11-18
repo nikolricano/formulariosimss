@@ -1,0 +1,17 @@
+<%= form_tag(@user, url: formularios_formulario2_path, method: "post") do |f| %>
+    <p>Nombre</p>
+    <%= f.text_field_tag :name, '' %>
+    <p>Edad</p>
+    <%= f.text_field_tag :age, '' %>
+    <p>Dirección</p>
+    <%= f.text_field_tag :adress, ''%>
+    <p>RFC</p>
+    <%= f.text_field_tag :rfc, ''%>
+    <p>CURP</p>
+    <%= f.text_field_tag :curp, ''%>
+    <p>Celphone</p>
+    <%= f.text_field_tag :celphone, ''%>
+<%= submit_tag("Enviar") %>
+<% end %>
+<%= params %>
+

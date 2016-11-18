@@ -1,0 +1,15 @@
+<%= form_for(@user, url: formularios_formulario1_path, method: "post") do |f| %>
+ <label for='name'>Name</label>
+ <%= f.text_field :name, id: 'name' %>
+ <label for='age'>Age</label>
+ <%= f.text_field :age, id: 'age' %>
+ <label form='adress'>adress</label>
+ <%= f.text_field :adress, id: 'adress' %>
+ <label form='adress'>adress</label>
+ <%= f.text_field :rfc, id: 'rfc' %>
+ <label form='adress'>adress</label>
+ <%= f.text_field :curp, id: 'curp' %>
+ <label form='adress'>adress</label>
+ <%= f.text_field :celphone, id: 'celphone' %>
+ <%= submit_tag("Enviar") %>
+<% end %>
